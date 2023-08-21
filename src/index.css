@@ -1,0 +1,58 @@
+*{
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;  
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+h3{
+  margin: 30px;
+}
+
+.centerContainer{
+  margin: 10px;
+  width: 80vw;
+  height: 68vh;
+  border-radius: 20px;
+  background: radial-gradient(#e66465, #9198e5);
+  transition: all 1s;
+  animation: bounce 2s infinite;
+}
+
+.resized{
+  width: 30vw;
+  height: 30vh;
+  transition: all 1s;
+}
+
+h1{
+  width: 80vw;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@keyframes bounce{
+  /* from{transform: translateY(0px);}
+  to{transform: translateY(20px);} */
+  0%{transform: translateY(0px);}
+  25%{transform: translateY(10px);}
+  50%{transform: translateY(0px);}
+  75%{transform: translateY(25px);}
+  100%{transform: translateY(0px);}
+}
+
+h2{
+  margin-top: 60px;
+  font-size: 100px;
+}
